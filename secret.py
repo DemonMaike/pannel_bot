@@ -1,0 +1,2 @@
+PHONE = '79957874797'
+PASS =  'gE7-DzR-zmk-jdJ-7'

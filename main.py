@@ -1,9 +1,12 @@
 from lib2to3.pgen2 import token
 from os import access
+import secrets
 import vk_api
+from * import secret
+
 
 #Аунтификация
-session = vk_api.VkApi('79957874797', 'gE7-DzR-zmk-jdJ')
+session = vk_api.VkApi(,)
 try:
     session.auth()
 except:
