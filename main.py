@@ -1,12 +1,13 @@
+# Документация https://vk-api.readthedocs.io/en/latest/
 from lib2to3.pgen2 import token
 from os import access
 import secrets
 import vk_api
-from secret import PHONE,PASS
+from secret import PHONE,PASS,VK_TOKEN
 
 
 #Аунтификация
-session = vk_api.VkApi(PHONE, PASS)
+session = vk_api.VkApi(token=VK_TOKEN)
 try:
     session.auth()
 except:
