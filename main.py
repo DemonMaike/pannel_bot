@@ -7,12 +7,8 @@ from secret import PHONE,PASS,VK_TOKEN
 
 
 #Аунтификация
-session = vk_api.VkApi(token=VK_TOKEN)
-try:
-    session.auth()
-except:
-    session.check_sid
-    
+session = vk_api.VkApi(login=PHONE, password=PASS, token=VK_TOKEN)
+session.auth(reauth=True, token_only=True)
 vk = session.get_api()
 
 # выбор данных
