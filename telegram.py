@@ -4,7 +4,7 @@ from secret import TG_TOKEN, ID_GROUP
 from main import post_text,photo_url
 
 # включаем бота                         токен бота
-bot = telebot.TeleBot('5704783208:AAHwd3eNdjXUF5aqs38beuoZ_izR9LniiuA')
+bot = telebot.TeleBot(TG_TOKEN)
 media = {'text':post_text, 'url':photo_url}
 chat_id = ID_GROUP
 def send_post():
